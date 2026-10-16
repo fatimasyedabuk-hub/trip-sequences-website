@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three travel photographs. Two sequences. Watch a holiday begin, then see the same images tell the story of going home.">
+  <title>Out of Office — The Power of Sequencing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a href="./" class="brand">OUT OF OFFICE<span>↗</span></a><span class="edition">A STUDY IN SEQUENCE · NO. 01</span></header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">THREE PHOTOGRAPHS. TWO STORIES.</p>
+      <h1 id="page-title">Same places.<br><em>Different endings.</em></h1>
+      <div class="intro-bottom"><p>A suitcase. An airport. A beach.<br>Change the order, and a holiday begins—or ends.</p><span class="collection-note">03 IMAGES<br>02 INTERPRETATIONS</span></div>
+    </section>
+    <section class="story" aria-label="Interactive photo story">
+      <div class="sequence-switch" aria-label="Choose a story">
+        <button id="begin-button" class="sequence-button selected" type="button" aria-pressed="true"><span class="sequence-number">01</span><span>The holiday begins</span><span aria-hidden="true">↗</span></button>
+        <button id="end-button" class="sequence-button" type="button" aria-pressed="false"><span class="sequence-number">02</span><span>The holiday ends</span><span aria-hidden="true">↙</span></button>
+      </div>
+      <div class="story-layout">
+        <figure class="main-figure"><div class="photo-wrap"><img id="main-image" src="images/suitcase.jpg" alt="An open suitcase packed with clothes, a camera, and a sun hat."><span class="photo-tag" id="photo-tag">01 / 03</span></div><figcaption><span>PHOTOGRAPH <span id="photo-name">THE SUITCASE</span></span><a id="image-credit" href="https://www.pexels.com/photo/photo-of-a-packed-suitcase-8212231/" target="_blank" rel="noopener noreferrer">Kindel Media / Pexels ↗</a></figcaption></figure>
+        <div class="story-copy">
+          <div><p class="eyebrow" id="chapter-label">BEGINNING · 01 OF 03</p><h2 id="chapter-title">Room for adventure.</h2><p id="chapter-caption" class="caption">The bag is packed. The everyday can wait. Everything you need for a week away is right here.</p></div>
+          <div class="reading"><span class="small-label">WHAT THE ORDER SUGGESTS</span><p id="reading-text">At the beginning, the packed suitcase feels like anticipation: something good is about to happen.</p></div>
+          <nav class="navigation" aria-label="Navigate the story"><button id="previous-button" class="nav-button" type="button" disabled><span aria-hidden="true">←</span> Back</button><button id="next-button" class="nav-button forward" type="button">Next <span aria-hidden="true">→</span></button></nav>
+          <div class="copy-bottom"><span id="sequence-position">STORY 01 · FRAME 01 / 03</span><button id="replay-button" type="button">Replay ↺</button></div>
+        </div>
+      </div>
+      <div class="timeline-heading"><h3>Your sequence</h3><span>CLICK A FRAME TO JUMP TO IT</span></div>
+      <div class="timeline" id="timeline" aria-label="Beginning, middle, and end">
+        <button class="frame active" type="button" data-index="0" aria-current="step" aria-label="Beginning: suitcase"><span class="frame-label">01 <span>BEGINNING</span></span><img src="images/suitcase.jpg" alt="" width="400" height="240"><span class="frame-title">The suitcase <span aria-hidden="true">↗</span></span></button>
+        <button class="frame" type="button" data-index="1" aria-label="Middle: airport"><span class="frame-label">02 <span>MIDDLE</span></span><img src="images/airport.jpg" alt="" width="400" height="240"><span class="frame-title">The airport <span aria-hidden="true">↗</span></span></button>
+        <button class="frame" type="button" data-index="2" aria-label="End: beach"><span class="frame-label">03 <span>END</span></span><img src="images/beach.jpg" alt="" width="400" height="240"><span class="frame-title">The beach <span aria-hidden="true">↗</span></span></button>
+      </div>
+      <p class="keyboard-hint">Use the buttons, click a frame, or press the left and right arrow keys.</p>
+      <p class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true">The holiday begins. Beginning: Room for adventure.</p>
+    </section>
+    <section class="comparison" aria-labelledby="comparison-title"><p class="eyebrow">IT'S ALL IN THE ORDER</p><h2 id="comparison-title">An escape. Or a return.</h2><div class="comparison-grid"><div><h3>01 / The holiday begins</h3><p class="route">Suitcase → Airport → Beach</p><p>The suitcase signals anticipation, the airport becomes a gateway, and the beach is the reward. The journey moves toward freedom.</p></div><div><h3>02 / The holiday ends</h3><p class="route">Beach → Suitcase → Airport</p><p>The beach becomes a last moment to hold onto. Packing means letting go, and the airport marks the journey home.</p></div></div><p class="comparison-note">No photographs are added or removed. Their position changes how we read the journey.</p></section>
+    <noscript><p class="no-js">Enable JavaScript to switch the image order and move through each story.</p></noscript>
+  </main>
+  <footer><span>OUT OF OFFICE ↗</span><span>THE POWER OF SEQUENCING</span><details><summary>Photo credits</summary><ul><li>Suitcase: <a href="https://www.pexels.com/photo/photo-of-a-packed-suitcase-8212231/">Kindel Media / Pexels</a> · <a href="https://www.pexels.com/license/">Pexels License</a></li><li>Airport: <a href="https://unsplash.com/photos/people-walk-past-a-departure-board-in-an-airport-hNQ0RH_a5Jo">jack berry / Unsplash</a> · <a href="https://unsplash.com/license">Unsplash License</a></li><li>Beach: <a href="https://unsplash.com/ja/写真/澄んだ青い水と白い砂浜のビーチ---i41IjUzVQ">Schiba / Unsplash</a> · <a href="https://unsplash.com/license">Unsplash License</a></li></ul></details></footer>
+</body>
+</html>
